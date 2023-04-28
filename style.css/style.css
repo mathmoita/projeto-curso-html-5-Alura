@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Roboto+Slab&display=swap');
+
+:root {
+    --cor-primaria: #000000; 
+    --cor-secundaria: #F6F6F6;
+    --cor-tercearia: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Roboto Slab', serif;
+    --fonte-secundaria: 'Chivo Mono', monospace; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 2% 0% 0% 15%; 
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__links {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-tercearia);
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.styling {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.styling__content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.styling__content__title{
+    font-size: 2.24rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+}
+
+.title-editor {
+    color: var(--cor-tercearia);
+}
+
+.styling__content__p{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    color: var(--cor-secundaria);
+}
+
+.styling__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.styling__links__subtitle{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.styling__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-size: 1.5rem;
+    font-weight: 550;
+    border: 2px solid var(--cor-tercearia);
+    text-align: center;
+    width: 50%;
+    border-radius: 8px;
+    padding: 18px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+}
+
+.styling__links__link:hover{
+    background-color: var(--cor-hover);
+}
+
+.styling__image {
+    width: 90%;
+}
+
+.footer {
+    background-color: var(--cor-tercearia);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+    font-weight: 400;
+    position: relative;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 6%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+   
+    .styling {
+        flex-direction: column-reverse;
+        padding: 5%
+    }
+
+    .styling__content {
+        width: auto;
+    }
+}
